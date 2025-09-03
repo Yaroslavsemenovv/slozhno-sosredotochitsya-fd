@@ -9,29 +9,28 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --bg-image-dark: url('../images/cover-image-dark.png');
-  --bg-color-dark:#000028;
+  --bg-image: url('../images/cover-image-dark.png');
+  --bg-color:#000028;
+  --big-h-theme-color:#DB00FF;
+  --background-text-theme-color:#FF0070;
 
+ }
       .page {
-        background-color: var(--blue);
-        
-      }
-
-      .header {
-        background-image:url(../images/cover-image-dark.png);
-
+        background-image: var(--bg-image);
+        background-color: var(--bg-color);
       }
 
       .header_title {
-        color: var(--violet);
+        color: var(--big-h-theme-color);
+        text-shadow: 4px 4px 0 var(--background-text-theme-color);
       }
 
       .header_description {
-        background-color: var(--pink);
+        background-color: var(--background-text-theme-color);
       }
 
       .header_paragraph {
-        color: var(--blue);
+        color: var(--bg-color);
       }
 
       .rec {
@@ -39,78 +38,76 @@
       }
 
       .decoration_right::before {
-        border-top:1px solid var(--pink);
-        border-right:1px solid var(--pink);
+        border-top:1px solid var(--background-text-theme-color);
+        border-right:1px solid var(--background-text-theme-color);
       }
 
       .decoration_left::before {
-        border-bottom:1px solid var(--pink);
-        border-left:1px solid var(--pink);
+        border-bottom:1px solid var(--background-text-theme-color);
+        border-left:1px solid var(--background-text-theme-color);
       }
 
       .header__theme-menu-item {
-        color: var(--pink);
+        color: var(--background-text-theme-color);
       }
 
       .card_title {
-        color: var(--pink);
+        color: var(--background-text-theme-color);
       }
 
       .paragraph_title {
-        color: var(--blue);
-        background-color: var(--pink);
+        color: var(--bg-color);
+        background-color: var(--background-text-theme-color);
       }
 
       .card_text {
-        color: var(--pinki);
+        color: var(--paragraph-text-color);
       }
 
       .word_link {
-        color: var(--pinki);
+        color: var(--paragraph_text-color);
         text-decoration:none;
-        text-shadow:0px 4px 0.4px var(--pink);
+        text-shadow:4px 4px 0.25px var(--background-text-theme-color);
       }
 
       .word_link:hover {
-        border-bottom:1px solid var(--pinki);
+        border-bottom:1px solid var(--paragraph_text-color);
       }
 
       .word_link:focus-visible {
         border:none;
-        outline:1px solid var(--pinki);
+        outline:1px solid var(--paragraph_text-color);
       }
 
       .header__theme-menu-button:hover {
-        outline:1px solid rgb(255, 0, 112, 0.4);
+        outline:1px solid var(--background-text-theme-color, 0.4);
       }
 
       .header__theme-menu-button:focus-visible {
-        border-bottom:1px solid var(--pink);
+        border-bottom:1px solid var(--background-text-theme-color);
         outline:none;
       }
 
       .header__theme-menu-button_active {
-        outline:1px solid var(--pink);
-        font-weight: var(--bold);
+        outline:1px solid var(--background-text-theme-color);
         pointer-events:none;
       }
 
       .card_title_special {
-        color: var(--blue);
-        background-color: var(--pink);
+        color: var(--bg-color);
+        background-color: var(--background-text-theme-color);
       }
 
       .paragraph_title_special {
-        color: var(--blue);
-        background-color: var(--pink);
+        color: var(--bg-color);
+        background-color: var(--background-text-theme-color);
       }
 
       .gallery_title {
-        color: var(--blue);
-        background-color: var(--pink);
+        color: var(--bg-color);
+        background-color: var(--background-text-theme-color);
       }
 
       .footer_title {
-        color: var(--violet);
+        color: var(--big-h-theme-color);
       }
-}

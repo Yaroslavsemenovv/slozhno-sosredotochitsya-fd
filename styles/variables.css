@@ -5,11 +5,11 @@
 
 :root {
   --text-size:18px;
-  --font-family:IBM Plex Mono;
-  --violet:#DB00FF;
-  --pink:#FF0070;
-  --bold:800;
-  --regular:400;
-  --blue:#000028;
-  --pinki:#F1B2CE;
+  --font-family:"IBM Plex Mono", sans-serif;
+  --big-h-color:#DB00FF;
+  --background-text-color:#FF0070;
+  --font-weight-bold:700;
+  --font-weight-regular:400;
+  --main-text-color:#000028;
+  --paragraph-text-color:#F1B2CE;
 }

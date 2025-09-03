@@ -9,33 +9,28 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --bg-image-light: url('../images/cover-image-light.png');
-  --bg-color-light:#FFF1F7;
-  --pink-color-light:#FFC2E6;
-  --violet-color-light:#FF8DCB;
-  --grey-color-light:#353430;
+  --bg-image: url('../images/cover-image-light.png');
+  --bg-color:#FFF1F7;
+  --big-h-theme-color:#FFC2E6;
+  --background-text-theme-color:#FF8DCB;
+  --paragraph_text-theme-color:#353430;
 
-
-
-  .page {
-        background-color: var(--bg-color-light);
-      }
-
-      .header {
-      background-image:url(../images/cover-image-light.png);
-
+      .page {
+        background-image: var(--bg-image);
+        background-color: var(--bg-color);
       }
 
       .header_title {
-        color: var(--pink-color-light);
+        color: var(--big-h-theme-color);
+        text-shadow: 4px 4px 0 var(--background-text-theme-color);
       }
 
       .header_description {
-        background-color: var(--violet-color-light);
+        background-color: var(--background-text-theme-color);
       }
 
       .header_paragraph {
-        color: var(--grey-color-light);
+        color: var(--paragraph_text-theme-color);
       }
 
       .rec {
@@ -43,105 +38,106 @@
       }
 
       .decoration_right::before {
-        border-top:1px solid var(--grey-color-light);
-        border-right:1px solid var(--grey-color-light);
+        border-top:1px solid var(--paragraph_text-theme-color);
+        border-right:1px solid var(--paragraph_text-theme-color);
       }
 
       .decoration_left::before {
-        border-bottom:1px solid var(--grey-color-light);
-        border-left:1px solid var(--grey-color-light);
+        border-bottom:1px solid var(--paragraph_text-theme-color);
+        border-left:1px solid var(--paragraph_text-theme-color);
       }
 
       .header__theme-menu-item {
-        color: var(--grey-color-light);
+        color: var(--paragraph_text-theme-color);
       }
 
       .card_title {
-        color: var(--grey-color-light);
+        color: var(--paragraph_text-theme-color);
       }
 
       .paragraph_title {
-        color: var(--grey-color-light);
-        background-color: var(--violet-color-light);
+        color: var(--paragraph_text-theme-color);
+        background-color: var(--background-text-theme-color);
       }
 
       .card_text {
-        color: var(--grey-color-light);
+        color: var(--paragraph_text-theme-color);
       }
 
       .word_link {
-        color: var(--grey-color-light);
+        color: var(--paragraph_text-theme-color);
         text-decoration:none;
-        text-shadow:0px 4px 0.4px var(--pinki);
+        text-shadow:4px 4px 0.25px var(--background-text-theme-color);
       }
 
       .word_link:hover {
-        border-bottom:1px solid var(--grey-color-light);
+        border-bottom:1px solid var(--paragraph_text-theme-color);
       }
 
       .word_link:focus-visible {
         border:none;
-        outline:1px solid var(--grey-color-light);
+        outline:1px solid var(--paragraph_text-theme-color);
       }
 
       .header__theme-menu-button:hover {
-        outline:1px solid rgb(53, 52, 48, 0.4);
+        outline:1px solid var(---paragraph_text-theme-color, 0.4);
       }
 
       .header__theme-menu-button:focus-visible {
-        border-bottom:1px solid var(--grey-color-light);
+        border-bottom:1px solid var(--paragraph_text-theme-color);
         outline:none;
       }
 
       .header__theme-menu-button_active {
-        outline:1px solid var(--grey-color-light);
-        font-weight: var(--bold);
+        outline:1px solid var(--paragraph_text-theme-color);
         pointer-events:none;
       }
 
       .card_title_special {
-        color: var(--grey-color-light);
-        background-color: var(--violet-color-light);
+        color: var(--paragraph_text-theme-color);
+        background-color: var(--background-text-theme-color);
       }
 
       .paragraph_title_special {
-        background-color: var(--violet-color-light);
+        color: var(--paragraph_text-theme-color);
+        background-color: var(--background-text-theme-color);
       }
 
       .gallery_title {
-        color: var(--grey-color-light);
-        background-color: var(--violet-color-light);
+        color: var(--paragraph_text-theme-color);
+        background-color: var(--background-text-theme-color);
       }
 
       .footer_title {
-        color: var(--pink-color-light);
+        color: var(--big-h-theme-color);
       }
-
     }
 
 
 @media (prefers-color-scheme: light) {
   
     :root {
+     --bg-color:#FFF1F7;
+     --big-h-theme-color:#FFC2E6;
+     --background-text-theme-color:#FF8DCB;
+     --paragraph_text-theme-color:#353430;
 
       .page {
-        background-color: var(--bg-color-light);
-      }
-
-      .header {
-      background-image:url(../images/cover-image-light.png);
+        background-image: var(--bg-image);
+        background-color: var(--bg-color);
       }
 
       .header_title {
-        color: var(--pink-color-light);
+        color: var(--big-h-theme-color);
+        text-shadow: 4px 4px 0 var(--background-text-theme-color);
       }
 
       .header_description {
-        background-color: var(--violet-color-light);
+        background-color: var(--background-text-theme-color);
       }
 
       .header_paragraph {
-        color: var(--grey-color-light);
+        color: var(--paragraph_text-theme-color);
       }
 
       .rec {
@@ -149,78 +145,78 @@
       }
 
       .decoration_right::before {
-        border-top:1px solid var(--grey-color-light);
-        border-right:1px solid var(--grey-color-light);
+        border-top:1px solid var(--paragraph_text-theme-color);
+        border-right:1px solid var(--paragraph_text-theme-color);
       }
 
       .decoration_left::before {
-        border-bottom:1px solid var(--grey-color-light);
-        border-left:1px solid var(--grey-color-light);
+        border-bottom:1px solid var(--paragraph_text-theme-color);
+        border-left:1px solid var(--paragraph_text-theme-color);
       }
 
       .header__theme-menu-item {
-        color: var(--grey-color-light);
+        color: var(--paragraph_text-theme-color);
       }
 
       .card_title {
-        color: var(--grey-color-light);
+        color: var(--paragraph_text-theme-color);
       }
 
       .paragraph_title {
-        color: var(--grey-color-light);
-        background-color: var(--violet-color-light);
+        color: var(--paragraph_text-theme-color);
+        background-color: var(--background-text-theme-color);
       }
 
       .card_text {
-        color: var(--grey-color-light);
+        color: var(--paragraph_text-theme-color);
       }
 
       .word_link {
-        color: var(--grey-color-light);
+        color: var(--paragraph_text-theme-color);
         text-decoration:none;
-        text-shadow:0px 4px 0.4px var(--pinki);
+        text-shadow:4px 4px 0.25px var(--background-text-theme-color);
       }
 
       .word_link:hover {
-        border-bottom:1px solid var(--grey-color-light);
+        border-bottom:1px solid var(--paragraph_text-theme-color);
       }
 
       .word_link:focus-visible {
         border:none;
-        outline:1px solid var(--grey-color-light);
+        outline:1px solid var(--paragraph_text-theme-color);
       }
 
       .header__theme-menu-button:hover {
-        outline:1px solid rgb(53, 52, 48, 0.4);
+        outline:1px solid var(---paragraph_text-theme-color, 0.4);
       }
 
       .header__theme-menu-button:focus-visible {
-        border-bottom:1px solid var(--grey-color-light);
+        border-bottom:1px solid var(--paragraph_text-theme-color);
         outline:none;
       }
 
       .header__theme-menu-button_active {
-        outline:1px solid var(--grey-color-light);
-        font-weight: var(--bold);
+        outline:1px solid var(--paragraph_text-theme-color);
         pointer-events:none;
       }
 
       .card_title_special {
-        color: var(--grey-color-light);
-        background-color: var(--violet-color-light);
+        color: var(--paragraph_text-theme-color);
+        background-color: var(--background-text-theme-color);
       }
 
       .paragraph_title_special {
-        background-color: var(--violet-color-light);
+        color: var(--paragraph_text-theme-color);
+        background-color: var(--background-text-theme-color);
       }
 
       .gallery_title {
-        color: var(--grey-color-light);
-        background-color: var(--violet-color-light);
+        color: var(--paragraph_text-theme-color);
+        background-color: var(--background-text-theme-color);
       }
 
       .footer_title {
-        color: var(--pink-color-light);
+        color: var(--big-h-theme-color);
       }
 
     }
