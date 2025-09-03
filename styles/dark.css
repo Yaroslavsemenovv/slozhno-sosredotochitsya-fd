@@ -14,7 +14,12 @@
   --big-h-theme-color:#DB00FF;
   --background-text-theme-color:#FF0070;
 
+
+
  }
+
+:root.theme-dark {
+  
       .page {
         background-image: var(--bg-image);
         background-color: var(--bg-color);
@@ -111,3 +116,5 @@
       .footer_title {
         color: var(--big-h-theme-color);
       }
+}
+      
