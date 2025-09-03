@@ -2,6 +2,7 @@
 
 .page {
    font-family: var(--font-family);
+   background-attachment:fixed;
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
    background-color: var(--blue);
   
@@ -41,6 +42,7 @@
   font-size: var(--text-size);
   text-transform:lowercase;
   background-color:transparent;
+  cursor:pointer;
 }
 
 .header__theme-menu {
@@ -61,7 +63,7 @@
   text-shadow: 4px 4px 0 var(--pink);
 }
 
-.header_description{
+.header_description {
   display:grid;
   align-self:center;
   background-color: var(--pink);
@@ -217,7 +219,7 @@
   grid-template-rows:auto;
 }
 
-.gallery img{
+.gallery img {
   width:100%;
   height:100%;
   padding-top:10px;
@@ -241,10 +243,6 @@
   color: var(--violet);
   font-weight: var(--bold);
   font-size:clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-}
-
-.header__theme-menu-button {
-  cursor:pointer;
 }
 
 .header__theme-menu-button:hover {
@@ -376,7 +374,7 @@
         margin-bottom:20px;
       }
 
-      .gallery img{
+      .gallery img {
         padding-top:0;
         inline-size:100%;
         block-size:100%;
