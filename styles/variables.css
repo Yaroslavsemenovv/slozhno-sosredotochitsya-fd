@@ -4,13 +4,16 @@
 */
 
 :root {
+  --bg-image: url('../images/cover-image-dark.png');
   --text-size:18px;
   --font-family:"IBM Plex Mono", sans-serif;
   --big-h-color:#DB00FF;
+  --med-h-color:#FF0070;
   --background-text-color:#FF0070;
   --font-weight-bold:700;
   --font-weight-regular:400;
   --main-text-color:#000028;
-  --paragraph-text-color:#F1B2CE;
-  --paragraph_text-theme-color:#353430;
+  --paragraph_text-color:#F1B2CE;
+  --decoration-color:#FF0070;
+  --button-hover-color:#FF007066;
 }

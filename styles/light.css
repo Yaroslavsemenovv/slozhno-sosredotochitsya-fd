@@ -11,212 +11,38 @@
   */
   --bg-image: url('../images/cover-image-light.png');
   --bg-color:#FFF1F7;
-  --big-h-theme-color:#FFC2E6;
-  --background-text-theme-color:#FF8DCB;
-  --paragraph_text-theme-color:#353430;
+  --big-h-color:#FFC2E6;
+  --med-h-color:#353430;
+  --background-text-color:#FF8DCB;
+  --paragraph_text-color:#353430;
+  --main-text-color:#353430;
+  --decoration-color:#353430;
+  --button-hover-color:#32312D66;
 
-      .page {
-        background-image: var(--bg-image);
-        background-color: var(--bg-color);
-      }
+  .rec {
+  display:none;
+  }
 
-      .header_title {
-        color: var(--big-h-theme-color);
-        text-shadow: 4px 4px 0 var(--background-text-theme-color);
-      }
+}
 
-      .header_description {
-        background-color: var(--background-text-theme-color);
-      }
-
-      .header_paragraph {
-        color: var(--paragraph_text-theme-color);
-      }
-
-      .rec {
-        display:none;
-      }
-
-      .decoration_right::before {
-        border-top:1px solid var(--paragraph_text-theme-color);
-        border-right:1px solid var(--paragraph_text-theme-color);
-      }
-
-      .decoration_left::before {
-        border-bottom:1px solid var(--paragraph_text-theme-color);
-        border-left:1px solid var(--paragraph_text-theme-color);
-      }
-
-      .header__theme-menu-item {
-        color: var(--paragraph_text-theme-color);
-      }
-
-      .card_title {
-        color: var(--paragraph_text-theme-color);
-      }
-
-      .paragraph_title {
-        color: var(--paragraph_text-theme-color);
-        background-color: var(--background-text-theme-color);
-      }
-
-      .card_text {
-        color: var(--paragraph_text-theme-color);
-      }
-
-      .word_link {
-        color: var(--paragraph_text-theme-color);
-        text-decoration:none;
-        text-shadow:4px 4px 0.25px var(--background-text-theme-color);
-      }
-
-      .word_link:hover {
-        border-bottom:1px solid var(--paragraph_text-theme-color);
-      }
-
-      .word_link:focus-visible {
-        border:none;
-        outline:1px solid var(--paragraph_text-theme-color);
-      }
-
-      .header__theme-menu-button:hover {
-        outline:1px solid var(--paragraph_text-theme-color, 0.4);
-      }
-
-      .header__theme-menu-button:focus-visible {
-        border-bottom:1px solid var(--paragraph_text-theme-color);
-        outline:none;
-      }
-
-      .header__theme-menu-button_active {
-        outline:1px solid var(--paragraph_text-theme-color);
-        pointer-events:none;
-      }
-
-      .card_title_special {
-        color: var(--paragraph_text-theme-color);
-        background-color: var(--background-text-theme-color);
-      }
-
-      .paragraph_title_special {
-        color: var(--paragraph_text-theme-color);
-        background-color: var(--background-text-theme-color);
-      }
-
-      .gallery_title {
-        color: var(--paragraph_text-theme-color);
-        background-color: var(--background-text-theme-color);
-      }
-
-      .footer_title {
-        color: var(--big-h-theme-color);
-      }
-    }
 
 @media (prefers-color-scheme: light) {
   
     :root {
+     --bg-image: url('../images/cover-image-light.png');
      --bg-color:#FFF1F7;
-     --big-h-theme-color:#FFC2E6;
-     --background-text-theme-color:#FF8DCB;
-     --paragraph_text-theme-color:#353430;
+     --big-h-color:#FFC2E6;
+     --med-h-color:#353430;
+     --background-text-color:#FF8DCB;
+     --paragraph_text-color:#353430;
+     --main-text-color:#353430;
+     --decoration-color:#353430;
+     --button-hover-color:#32312D66;
     
+
+     .rec {
+    display:none;
+     }
   }
-      .page {
-        background-image: var(--bg-image);
-        background-color: var(--bg-color);
-      }
-
-      .header_title {
-        color: var(--big-h-theme-color);
-        text-shadow: 4px 4px 0 var(--background-text-theme-color);
-      }
-
-      .header_description {
-        background-color: var(--background-text-theme-color);
-      }
-
-      .header_paragraph {
-        color: var(--paragraph_text-theme-color);
-      }
-
-      .rec {
-        display:none;
-      }
-
-      .decoration_right::before {
-        border-top:1px solid var(--paragraph_text-theme-color);
-        border-right:1px solid var(--paragraph_text-theme-color);
-      }
-
-      .decoration_left::before {
-        border-bottom:1px solid var(--paragraph_text-theme-color);
-        border-left:1px solid var(--paragraph_text-theme-color);
-      }
-
-      .header__theme-menu-item {
-        color: var(--paragraph_text-theme-color);
-      }
-
-      .card_title {
-        color: var(--paragraph_text-theme-color);
-      }
-
-      .paragraph_title {
-        color: var(--paragraph_text-theme-color);
-        background-color: var(--background-text-theme-color);
-      }
-
-      .card_text {
-        color: var(--paragraph_text-theme-color);
-      }
-
-      .word_link {
-        color: var(--paragraph_text-theme-color);
-        text-decoration:none;
-        text-shadow:4px 4px 0.25px var(--background-text-theme-color);
-      }
-
-      .word_link:hover {
-        border-bottom:1px solid var(--paragraph_text-theme-color);
-      }
-
-      .word_link:focus-visible {
-        border:none;
-        outline:1px solid var(--paragraph_text-theme-color);
-      }
-
-      .header__theme-menu-button:hover {
-        outline:1px solid var(--paragraph_text-theme-color, 0.4);
-      }
-
-      .header__theme-menu-button:focus-visible {
-        border-bottom:1px solid var(--paragraph_text-theme-color);
-        outline:none;
-      }
-
-      .header__theme-menu-button_active {
-        outline:1px solid var(--paragraph_text-theme-color);
-        pointer-events:none;
-      }
-
-      .card_title_special {
-        color: var(--paragraph_text-theme-color);
-        background-color: var(--background-text-theme-color);
-      }
-
-      .paragraph_title_special {
-        color: var(--paragraph_text-theme-color);
-        background-color: var(--background-text-theme-color);
-      }
-
-      .gallery_title {
-        color: var(--paragraph_text-theme-color);
-        background-color: var(--background-text-theme-color);
-      }
-
-      .footer_title {
-        color: var(--big-h-theme-color);
-      }
 
     }
