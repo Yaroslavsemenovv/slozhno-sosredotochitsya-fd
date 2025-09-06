@@ -3,7 +3,7 @@
 .page {
    font-family: var(--font-family, sans-serif);
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-   background-color: var(--main-text-color);
+   background-color: var(--bg-color);
    background-image: var(--bg-image);
    background-repeat: no-repeat;
    background-position: center;
@@ -469,6 +469,7 @@
         grid-template-rows:auto;
         gap:20px;
         inline-size:984px;
+        padding-left:5px;
       }
 
       .article_wrapper_bottom {
